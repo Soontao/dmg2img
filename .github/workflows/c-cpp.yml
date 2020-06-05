@@ -18,5 +18,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v1
+    - name: install 
+      run: choco install make
     - name: build
-      run: cmake dmg2img
+      run: make dmg2img
