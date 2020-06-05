@@ -13,12 +13,3 @@ jobs:
     - uses: actions/checkout@v2
     - name: make
       run: make dmg2img
-
-  build-dmg2img-windows:
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: install 
-      run: choco install make
-    - name: build
-      run: make dmg2img
