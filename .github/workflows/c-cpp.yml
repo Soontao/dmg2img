@@ -14,14 +14,14 @@ jobs:
     - name: make
       run: make dmg2img
 
-  build-dmg2img-windows:
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: make
-      run: |
-        gcc -O2 -Wall dmg2img.c
-        gcc -O2 -Wall base64.c
-        gcc -O2 -Wall adc.c
-        gcc -s -o dmg2img dmg2img.o base64.o adc.o -L. -lz -lbz2
+  # build-dmg2img-windows:
+  #   runs-on: windows-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - name: make
+  #     run: |
+  #       gcc -O2 -Wall dmg2img.c
+  #       gcc -O2 -Wall base64.c
+  #       gcc -O2 -Wall adc.c
+  #       gcc -s -o dmg2img dmg2img.o base64.o adc.o -L. -lz -lbz2
 
