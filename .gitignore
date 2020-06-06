@@ -1,3 +1,4 @@
 *.o
 *.exe
 dmg2img
+*.gch
